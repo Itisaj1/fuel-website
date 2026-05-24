@@ -70,10 +70,6 @@ export default function Workspaces() {
           memberships for{" "}
           <span ref={typedRef} className="text-cream [&_.typed-cursor]:text-cream" />
         </h2>
-        <p className="font-body mt-4 max-w-xl text-lg text-cream/90">
-          Not just a desk — a launchpad. Choose the tier that fits how you
-          collaborate, innovate, and grow.
-        </p>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:mt-12 lg:gap-8">
           {workspaces.map((space) => (
