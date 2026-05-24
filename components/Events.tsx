@@ -64,23 +64,23 @@ export default function Events() {
   }, []);
 
   return (
-    <section id="events" className="bg-cream px-6 py-24">
+    <section id="events" className="bg-cream px-6 py-10 lg:px-10 xl:px-12">
       <div className="mx-auto max-w-site">
         <h2 className="font-display text-4xl font-bold text-dark md:text-5xl">
           join us for a(n){" "}
           <span ref={typedRef} className="text-primary" />
         </h2>
-        <p className="font-body mt-4 max-w-xl text-dark/70">
+        <p className="font-body mt-3 max-w-xl text-dark/70">
           Where founders, creatives, and business leaders connect — because big
           ideas don&apos;t happen in isolation.
         </p>
 
-        <div className="mt-12 -mx-6 overflow-x-auto px-6 pb-4 snap-x snap-mandatory scroll-smooth">
+        <div className="mt-8 -mx-6 overflow-x-auto px-6 pb-2 snap-x snap-mandatory scroll-smooth">
           <div className="flex w-max gap-4">
             {events.map((event) => (
               <article
                 key={event.name}
-                className="w-72 shrink-0 snap-start rounded-2xl border border-dark/10 bg-white p-6"
+                className="w-72 shrink-0 snap-start rounded-2xl border border-dark/10 bg-white p-5"
               >
                 <p className="font-display text-xs font-medium uppercase tracking-wide text-primary">
                   {event.type}

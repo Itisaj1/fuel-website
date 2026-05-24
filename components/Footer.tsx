@@ -51,7 +51,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="overflow-hidden bg-dark px-6 py-16 md:px-8">
+    <footer className="overflow-hidden bg-dark px-6 py-10 lg:px-10 xl:px-12">
       <div className="mx-auto max-w-site">
         <Image
           src="/images/fuel-logo.png"
@@ -60,7 +60,7 @@ export default function Footer() {
           height={236}
           className="h-16 w-auto brightness-0 invert md:h-20"
         />
-        <p className="font-display mt-4 text-sm font-medium text-amber">
+        <p className="font-display mt-3 text-sm font-medium text-amber">
           Collaboration · Innovation · Growth
         </p>
         <p className="font-body mt-2 text-sm text-cream/70">
@@ -73,7 +73,7 @@ export default function Footer() {
           fuelcoworking.com
         </a>
 
-        <div className="font-display mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-cream/60">
+        <div className="font-display mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-cream/60">
           <a
             href="https://instagram.com"
             target="_blank"

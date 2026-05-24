@@ -25,7 +25,7 @@ const pillars = [
 
 export default function Mission() {
   return (
-    <section id="mission" className="relative min-h-[500px]">
+    <section id="mission" className="relative min-h-[420px]">
       <Image
         src="/images/mission.png"
         alt="FUEL coworking community collaborating"
@@ -34,24 +34,24 @@ export default function Mission() {
       />
       <div className="absolute inset-0 bg-dark/60" aria-hidden />
 
-      <div className="relative z-10 flex min-h-[500px] flex-col items-center justify-center px-6 py-24">
-        <div className="max-w-3xl text-center">
+      <div className="relative z-10 mx-auto flex min-h-[420px] max-w-site flex-col justify-center px-6 py-10 lg:px-10 xl:px-12">
+        <div className="max-w-3xl">
           <h2 className="font-display text-4xl font-bold text-cream md:text-5xl">
             fuel your next big idea_
           </h2>
-          <p className="font-display mt-4 text-lg font-normal text-amber">
+          <p className="font-display mt-3 text-lg font-normal text-amber">
             Big ideas don&apos;t happen in isolation.
           </p>
-          <p className="font-body mt-6 text-lg leading-relaxed text-cream/90">
+          <p className="font-body mt-4 text-lg leading-relaxed text-cream/90">
             FUEL is a community-first coworking space in Spokane — a launchpad for
             founders, freelancers, and forward-thinkers ready to ignite momentum and
             take their next idea off the ground.
           </p>
         </div>
 
-        <div className="mt-14 grid max-w-site gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {pillars.map((pillar) => (
-            <article key={pillar.title} className="text-center">
+            <article key={pillar.title}>
               <h3 className="font-display text-lg font-bold text-cream">
                 {pillar.title}
               </h3>

@@ -34,10 +34,10 @@ export default function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-white">
-      <nav className="mx-auto flex h-[4.5rem] max-w-[90rem] items-center justify-between px-6 lg:px-10 xl:px-12">
+      <nav className="mx-auto flex h-14 max-w-[90rem] items-center justify-between px-6 lg:px-10 xl:px-12">
         <a
           href="#"
-          className="font-display text-[1.625rem] font-bold uppercase leading-none tracking-tight text-dark"
+          className="font-display text-xl font-bold uppercase leading-none tracking-tight text-dark"
         >
           FUEL
         </a>
@@ -66,7 +66,7 @@ export default function Navbar() {
             </a>
             <a
               href="#contact"
-              className="font-body rounded-full bg-dark px-5 py-2.5 text-[15px] font-normal text-white transition-opacity hover:opacity-85"
+              className="font-body rounded-full bg-dark px-4 py-2 text-[15px] font-normal text-white transition-opacity hover:opacity-85"
             >
               Try a free day
             </a>

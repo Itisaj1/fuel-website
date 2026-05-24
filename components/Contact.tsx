@@ -26,12 +26,13 @@ export default function Contact() {
   const [state, formAction] = useFormState(submitContact, initialState);
 
   return (
-    <section id="contact" className="bg-cream px-6 py-24">
-      <div className="mx-auto max-w-xl text-center">
+    <section id="contact" className="bg-cream px-6 py-10 lg:px-10 xl:px-12">
+      <div className="mx-auto max-w-site">
+        <div className="max-w-xl">
         <h2 className="font-display text-4xl font-bold text-dark">
           Fuel your next big idea
         </h2>
-        <p className="font-body mt-4 text-dark/70">
+        <p className="font-body mt-3 text-dark/70">
           Ready to level up? Claim a free day at FUEL — 809 W Main Ave, Suite 212,
           Spokane — and see why forward-thinkers choose us.
         </p>
@@ -39,13 +40,13 @@ export default function Contact() {
         {state.success ? (
           <p
             role="status"
-            className="font-body mt-10 rounded-2xl border border-primary/30 bg-white px-6 py-8 text-lg text-dark"
+            className="font-body mt-8 rounded-2xl border border-primary/30 bg-white px-6 py-6 text-lg text-dark"
           >
             Thanks for reaching out! We&apos;ll be in touch soon — your next idea
             takes off from here.
           </p>
         ) : (
-          <form action={formAction} className="mt-10 space-y-4 text-left">
+          <form action={formAction} className="mt-8 space-y-4">
             {state.error && (
               <p
                 role="alert"
@@ -121,6 +122,7 @@ export default function Contact() {
             <SubmitButton />
           </form>
         )}
+        </div>
       </div>
     </section>
   );

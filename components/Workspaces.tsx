@@ -33,17 +33,17 @@ const workspaces = [
 
 export default function Workspaces() {
   return (
-    <section id="workspaces" className="bg-primary px-6 py-24 md:px-8">
+    <section id="workspaces" className="bg-primary px-6 py-10 lg:px-10 xl:px-12">
       <div className="mx-auto max-w-site">
         <h2 className="font-display text-4xl font-bold text-cream md:text-5xl">
           memberships_ for everyone
         </h2>
-        <p className="font-body mt-4 max-w-xl text-cream/90">
+        <p className="font-body mt-3 max-w-xl text-cream/90">
           Not just a desk — a launchpad. Choose the tier that fits how you
           collaborate, innovate, and grow.
         </p>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2">
+        <div className="mt-8 grid gap-4 sm:grid-cols-2">
           {workspaces.map((space) => (
             <article
               key={space.title}
@@ -58,7 +58,7 @@ export default function Workspaces() {
                   sizes="(max-width: 640px) 112px, 144px"
                 />
               </div>
-              <div className="flex flex-col justify-center px-5 py-6">
+              <div className="flex flex-col justify-center px-4 py-4">
                 <p className="font-display text-sm font-medium text-primary">
                   {space.price}
                 </p>

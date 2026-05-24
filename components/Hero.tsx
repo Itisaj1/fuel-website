@@ -34,7 +34,7 @@ export default function Hero() {
       />
       <div className="absolute inset-0 bg-black/20" aria-hidden />
 
-      <div className="absolute inset-0 z-10 mx-auto max-w-site px-8 pt-[5.5rem] md:px-12 lg:px-16">
+      <div className="absolute inset-0 z-10 mx-auto max-w-site px-6 pt-16 lg:px-10 xl:px-12">
         <h1 className="max-w-4xl font-display text-[3.25rem] font-normal lowercase leading-[1.08] tracking-normal text-white sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6rem]">
           <span className="block">
             <span className="text-primary">your </span>
