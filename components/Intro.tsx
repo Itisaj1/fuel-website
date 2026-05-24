@@ -8,12 +8,12 @@ export default function Intro() {
         </h2>
 
         <div className="flex flex-col gap-y-4 md:col-span-7">
-          <p className="font-body text-[15px] leading-relaxed text-dark/80">
+          <p className="font-body text-[15px] leading-relaxed text-dark">
             From freelancers and flexible workers to startup teams, our coworking
             studios, private offices, and memberships are designed to support your
             productivity and elevate your workday.
           </p>
-          <p className="font-body text-[15px] leading-relaxed text-dark/80">
+          <p className="font-body text-[15px] leading-relaxed text-dark">
             Our meeting and event spaces foster collaboration, creativity, and
             growth. FUEL is where business and community thrive, and where the
             neighbourhood comes together to make a positive impact.
