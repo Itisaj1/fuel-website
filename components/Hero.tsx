@@ -24,7 +24,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-[58vh] min-h-[420px] md:h-[62vh] md:min-h-[480px]">
+    <section className="relative h-[85vh] min-h-[560px] md:h-[90vh] md:min-h-[640px]">
       <Image
         src="/images/hero.jpg"
         alt="FUEL coworking — white letters on a wooden table"
@@ -35,7 +35,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/20" aria-hidden />
 
       <div className="absolute inset-0 z-10 mx-auto max-w-site px-8 pt-[5.5rem] md:px-12 lg:px-16">
-        <h1 className="max-w-2xl font-display text-[2.75rem] font-normal lowercase leading-[1.1] tracking-normal text-white sm:text-5xl md:text-6xl lg:text-[4.25rem]">
+        <h1 className="max-w-4xl font-display text-[3.25rem] font-normal lowercase leading-[1.08] tracking-normal text-white sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6rem]">
           <span className="block">
             <span className="text-primary">your </span>
             <span ref={typedRef} />_
