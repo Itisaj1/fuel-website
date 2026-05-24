@@ -12,12 +12,21 @@ export async function submitContact(
   formData: FormData
 ): Promise<ContactState> {
   const name = (formData.get("name") as string)?.trim();
+  const company = (formData.get("company") as string)?.trim();
   const email = (formData.get("email") as string)?.trim();
   const phone = (formData.get("phone") as string)?.trim();
+  const interests = (formData.get("interests") as string)?.trim();
   const message = (formData.get("message") as string)?.trim();
 
-  if (!name || !email || !message) {
-    return { success: false, error: "Please fill in all required fields." };
+  if (!name || !email) {
+    return { success: false, error: "Please add your name and email." };
+  }
+
+  if (!interests) {
+    return {
+      success: false,
+      error: "Pick at least one option for what you're joining FUEL for.",
+    };
   }
 
   if (!process.env.RESEND_API_KEY) {
@@ -35,14 +44,15 @@ export async function submitContact(
     from,
     to,
     replyTo: email,
-    subject: `Free day request from ${name}`,
+    subject: `Workspace inquiry from ${name}`,
     html: `
-      <h2>New contact form submission</h2>
+      <h2>New FUEL contact form submission</h2>
       <p><strong>Name:</strong> ${escapeHtml(name)}</p>
+      <p><strong>Company / team:</strong> ${company ? escapeHtml(company) : "—"}</p>
       <p><strong>Email:</strong> ${escapeHtml(email)}</p>
       <p><strong>Phone:</strong> ${phone ? escapeHtml(phone) : "—"}</p>
-      <p><strong>Message:</strong></p>
-      <p>${escapeHtml(message).replace(/\n/g, "<br>")}</p>
+      <p><strong>Interested in:</strong> ${escapeHtml(interests)}</p>
+      <p><strong>Working on:</strong> ${message ? escapeHtml(message) : "—"}</p>
     `,
   });
 
