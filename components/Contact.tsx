@@ -62,7 +62,7 @@ export default function Contact() {
       <div className="mx-auto flex max-w-site justify-center">
         <div className="w-full max-w-2xl">
           <h2 className="font-display text-4xl font-bold text-dark md:text-5xl lg:text-[3.25rem] lg:leading-tight">
-            Let&apos;s fuel your next move
+            Try FUEL today
             <span className="text-primary">.</span>
           </h2>
 
