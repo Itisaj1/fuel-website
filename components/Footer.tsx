@@ -46,7 +46,7 @@ export default function Footer() {
         <div className="flex flex-col gap-14 lg:flex-row lg:items-start lg:justify-between lg:gap-10">
           <Link
             href="/"
-            className="font-display block text-[clamp(3.75rem,14vw,8.5rem)] font-bold leading-[0.88] tracking-tight text-cream"
+            className="font-display block text-[clamp(4.5rem,18vw,11rem)] font-bold leading-[0.88] tracking-tight text-cream"
           >
             FUEL
             <br />
