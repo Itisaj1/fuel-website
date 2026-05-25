@@ -48,7 +48,14 @@
   font-display: swap;
 }
 
-.typed-cursor {
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
   animation: typedBlink 0.9s infinite;
 }
 

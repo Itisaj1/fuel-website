@@ -1,16 +1,4 @@
-"use client";
-
 import Image from "next/image";
-import { useEffect, useRef } from "react";
-import Typed from "typed.js";
-
-const audienceTypes = [
-  "founders",
-  "freelancers",
-  "creators",
-  "teams",
-  "builders",
-];
 
 const workspaces = [
   {
@@ -44,64 +32,47 @@ const workspaces = [
 ];
 
 export default function Workspaces() {
-  const typedRef = useRef<HTMLSpanElement>(null);
-
-  useEffect(() => {
-    if (!typedRef.current) return;
-
-    const typed = new Typed(typedRef.current, {
-      strings: audienceTypes,
-      typeSpeed: 55,
-      backSpeed: 35,
-      backDelay: 2200,
-      loop: true,
-      showCursor: true,
-      cursorChar: "_",
-      smartBackspace: true,
-    });
-
-    return () => typed.destroy();
-  }, []);
-
   return (
-    <section id="workspaces" className="bg-primary px-6 py-10 lg:px-10 lg:py-14 xl:px-12">
+    <section id="workspaces" className="bg-primary px-6 py-12 lg:px-10 lg:py-16 xl:px-12">
       <div className="mx-auto max-w-site">
         <h2 className="font-display text-4xl font-bold text-cream md:text-5xl lg:text-6xl">
-          memberships for{" "}
-          <span ref={typedRef} className="text-cream [&_.typed-cursor]:text-cream" />
+          options for{" "}
+          <span className="underline decoration-cream decoration-2 underline-offset-[0.2em]">
+            everyone
+          </span>
         </h2>
 
-        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:gap-6">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:mt-12 lg:gap-8">
           {workspaces.map((space) => (
             <article
               key={space.title}
-              className="grid min-h-[160px] grid-cols-1 overflow-hidden bg-white sm:min-h-[170px] sm:grid-cols-2 lg:min-h-[180px]"
+              className="grid min-h-[200px] grid-cols-1 overflow-hidden bg-white sm:min-h-[180px] sm:grid-cols-[9fr_11fr] lg:min-h-[200px]"
             >
-              <div className="relative min-h-[120px] sm:min-h-0">
+              <div className="relative min-h-[160px] sm:min-h-0">
                 <Image
                   src={space.image}
                   alt={space.title}
                   fill
                   className="object-cover"
-                  sizes="(max-width: 640px) 100vw, 50vw"
+                  sizes="(max-width: 640px) 100vw, 22vw"
                 />
               </div>
 
-              <div className="flex flex-col justify-between bg-white p-4 lg:p-5">
+              <div className="flex flex-col justify-between bg-white p-5 lg:p-6">
                 <div>
-                  <h3 className="font-display text-lg font-bold text-dark lg:text-xl">
+                  <h3 className="font-display text-xl font-bold text-dark lg:text-2xl">
                     {space.title}
                   </h3>
-                  <p className="font-display mt-0.5 text-sm font-medium text-primary">
+                  <p className="font-display mt-1 text-sm font-medium text-primary">
                     {space.price}
                   </p>
-                  <p className="font-body mt-2 text-[15px] leading-snug text-dark/70">
+                  <p className="font-body mt-3 text-[15px] leading-relaxed text-dark/70">
                     {space.description}
                   </p>
                 </div>
                 <a
                   href="#contact"
-                  className="font-body mt-3 inline-flex items-center gap-1 text-[15px] text-dark transition-opacity hover:opacity-70"
+                  className="font-body mt-5 inline-flex items-center gap-1 text-[15px] text-dark transition-opacity hover:opacity-70"
                 >
                   Learn more <span aria-hidden>→</span>
                 </a>

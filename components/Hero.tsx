@@ -31,7 +31,7 @@ export default function Hero() {
         alt="FUEL coworking — white letters on a wooden table"
         fill
         priority
-        className="object-cover object-[center_40%]"
+        className="object-cover object-[center_55%]"
       />
       <div className="absolute inset-0 bg-black/25" aria-hidden />
 
