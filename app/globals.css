@@ -56,6 +56,8 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+.typed-cursor {
   animation: typedBlink 0.9s infinite;
 }
 
