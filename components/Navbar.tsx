@@ -1,29 +1,12 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
-function ChevronDown() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 20 20"
-      fill="currentColor"
-      className="h-3.5 w-3.5"
-      aria-hidden
-    >
-      <path
-        fillRule="evenodd"
-        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-        clipRule="evenodd"
-      />
-    </svg>
-  );
-}
-
 const navLinks = [
-  { href: "#workspaces", label: "Memberships", dropdown: true },
-  { href: "/mission", label: "About", dropdown: false },
-  { href: "#events", label: "Stories", dropdown: false },
+  { href: "/#workspaces", label: "Memberships" },
+  { href: "/#events", label: "Events" },
+  { href: "/mission", label: "Our mission" },
 ];
 
 export default function Navbar() {
@@ -32,24 +15,23 @@ export default function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-white">
       <nav className="mx-auto flex h-14 max-w-[90rem] items-center justify-between px-6 lg:px-10 xl:px-12">
-        <a
-          href="#"
+        <Link
+          href="/"
           className="font-display text-xl font-bold uppercase leading-none tracking-tight text-dark"
         >
           FUEL
-        </a>
+        </Link>
 
         <div className="hidden items-center xl:flex">
           <ul className="flex items-center gap-7">
             {navLinks.map((link) => (
               <li key={link.label}>
-                <a
+                <Link
                   href={link.href}
-                  className="font-body inline-flex items-center gap-1 text-[15px] font-normal text-dark transition-opacity hover:opacity-70"
+                  className="font-body text-[15px] font-normal text-dark transition-opacity hover:opacity-70"
                 >
                   {link.label}
-                  {link.dropdown && <ChevronDown />}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -61,22 +43,22 @@ export default function Navbar() {
             >
               Member Login
             </a>
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
               className="font-body rounded-full bg-dark px-4 py-2 text-[15px] font-bold text-white transition-opacity hover:opacity-85"
             >
               Try a free day
-            </a>
+            </Link>
           </div>
         </div>
 
         <div className="flex items-center gap-3 xl:hidden">
-          <a
-            href="#contact"
+          <Link
+            href="/#contact"
             className="font-body hidden rounded-full bg-dark px-4 py-2 text-sm font-bold text-white sm:inline-block"
           >
             Try a free day
-          </a>
+          </Link>
           <button
             type="button"
             className="flex h-10 w-10 items-center justify-center text-dark"
@@ -118,14 +100,13 @@ export default function Navbar() {
           <ul className="px-6 py-4">
             {navLinks.map((link) => (
               <li key={link.label}>
-                <a
+                <Link
                   href={link.href}
-                  className="font-body flex items-center justify-between py-3 text-[15px] text-dark"
+                  className="font-body block py-3 text-[15px] text-dark"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}
-                  {link.dropdown && <ChevronDown />}
-                </a>
+                </Link>
               </li>
             ))}
             <li className="border-t border-neutral-200 pt-3">
@@ -138,13 +119,13 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a
-                href="#contact"
+              <Link
+                href="/#contact"
                 className="font-body mt-2 inline-block rounded-full bg-dark px-5 py-2.5 text-[15px] font-bold text-white"
                 onClick={() => setOpen(false)}
               >
                 Try a free day
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

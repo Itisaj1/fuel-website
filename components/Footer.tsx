@@ -1,5 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
+import {
+  footerNavLinks,
+  legalLinks,
+  FooterNavButton,
+} from "@/lib/site-links";
 
 function InstagramIcon() {
   return (
@@ -51,60 +55,70 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="overflow-hidden bg-dark px-6 py-10 lg:px-10 xl:px-12">
+    <footer className="bg-dark px-6 py-12 lg:px-10 lg:py-14 xl:px-12">
       <div className="mx-auto max-w-site">
-        <Image
-          src="/images/fuel-logo.png"
-          alt="FUEL — Collaboration Innovation Growth"
-          width={624}
-          height={236}
-          className="h-16 w-auto brightness-0 invert md:h-20"
-        />
-        <p className="font-display mt-3 text-sm font-medium text-amber">
-          Collaboration · Innovation · Growth
-        </p>
-        <p className="font-body mt-2 text-sm text-cream/70">
-          809 W Main Ave, Suite 212 · Spokane, WA
-        </p>
-        <a
-          href="https://fuelcoworking.com"
-          className="font-body mt-1 inline-block text-sm text-cream/70 transition-colors hover:text-amber"
-        >
-          fuelcoworking.com
-        </a>
+        <div className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <Link
+              href="/"
+              className="font-display text-4xl font-bold leading-none text-cream md:text-5xl lg:text-6xl"
+            >
+              FUEL Coworking
+            </Link>
+            <p className="font-body mt-4 text-sm text-cream/70">
+              809 W Main Ave, Suite 212 · Spokane, WA
+            </p>
+            <a
+              href="https://fuelcoworking.com"
+              className="font-body mt-1 inline-block text-sm text-cream/70 transition-colors hover:text-amber"
+            >
+              fuelcoworking.com
+            </a>
+          </div>
 
-        <div className="font-display mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-cream/60">
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-            className="transition-colors hover:text-amber"
-          >
-            <InstagramIcon />
-          </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            className="transition-colors hover:text-amber"
-          >
-            <LinkedInIcon />
-          </a>
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-            className="transition-colors hover:text-amber"
-          >
-            <FacebookIcon />
-          </a>
-          <Link href="/privacy" className="transition-colors hover:text-amber">
-            Privacy Policy
-          </Link>
-          <span className="font-body">&copy; {year} FUEL Coworking</span>
+          <nav className="flex max-w-xl flex-wrap gap-3 lg:justify-end">
+            {footerNavLinks.map((link) => (
+              <FooterNavButton key={link.label} href={link.href} label={link.label} />
+            ))}
+            {legalLinks.map((link) => (
+              <FooterNavButton key={link.label} href={link.href} label={link.label} />
+            ))}
+          </nav>
+        </div>
+
+        <div className="mt-10 flex flex-col gap-4 border-t border-cream/15 pt-6 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex items-center gap-5 text-cream/60">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="transition-colors hover:text-amber"
+            >
+              <InstagramIcon />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="transition-colors hover:text-amber"
+            >
+              <LinkedInIcon />
+            </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="transition-colors hover:text-amber"
+            >
+              <FacebookIcon />
+            </a>
+          </div>
+          <p className="font-body text-sm text-cream/60">
+            &copy; {year} FUEL Coworking
+          </p>
         </div>
       </div>
     </footer>
