@@ -57,8 +57,8 @@ export default function Events() {
           <span className="bg-primary px-1.5 py-0.5 text-cream">event</span>
         </h2>
 
-        <div className="relative mt-12 -mx-6 overflow-hidden lg:mx-0 lg:mt-14">
-          <div className="events-scroll-mask overflow-x-auto px-6 pb-2 scrollbar-hide snap-x snap-mandatory scroll-smooth">
+        <div className="relative mt-12 -mx-6 overflow-hidden lg:-mx-10 lg:mt-14 xl:-mx-12">
+          <div className="events-scroll-mask overflow-x-auto px-6 pb-2 scrollbar-hide snap-x snap-mandatory scroll-smooth lg:px-10 xl:px-12">
             <div className="flex w-max gap-5">
               {events.map((event) => (
                 <article

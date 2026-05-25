@@ -61,15 +61,15 @@
   -webkit-mask-image: linear-gradient(
     to right,
     transparent,
-    #000 2.5rem,
-    #000 calc(100% - 2.5rem),
+    #000 4rem,
+    #000 calc(100% - 4rem),
     transparent
   );
   mask-image: linear-gradient(
     to right,
     transparent,
-    #000 2.5rem,
-    #000 calc(100% - 2.5rem),
+    #000 4rem,
+    #000 calc(100% - 4rem),
     transparent
   );
 }
@@ -79,15 +79,34 @@
     -webkit-mask-image: linear-gradient(
       to right,
       transparent,
-      #000 4rem,
-      #000 calc(100% - 4rem),
+      #000 6rem,
+      #000 calc(100% - 6rem),
       transparent
     );
     mask-image: linear-gradient(
       to right,
       transparent,
-      #000 4rem,
-      #000 calc(100% - 4rem),
+      #000 6rem,
+      #000 calc(100% - 6rem),
+      transparent
+    );
+  }
+}
+
+@media (min-width: 1024px) {
+  .events-scroll-mask {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 8rem,
+      #000 calc(100% - 8rem),
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 8rem,
+      #000 calc(100% - 8rem),
       transparent
     );
   }
