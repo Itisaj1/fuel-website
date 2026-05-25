@@ -36,10 +36,7 @@ export default function Workspaces() {
     <section id="workspaces" className="bg-primary px-6 py-12 lg:px-10 lg:py-16 xl:px-12">
       <div className="mx-auto max-w-site">
         <h2 className="font-display text-4xl font-bold text-cream md:text-5xl lg:text-6xl">
-          options for{" "}
-          <span className="underline decoration-cream decoration-2 underline-offset-[0.2em]">
-            everyone
-          </span>
+          options for everyone
         </h2>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:mt-12 lg:gap-8">
