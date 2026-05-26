@@ -9,12 +9,14 @@ export const INSTAGRAM_URL = "https://www.instagram.com/fuel.coworking/";
 
 export const headerNavLinks: FooterLink[] = [
   { href: "/#workspaces", label: "Memberships" },
+  { href: "/#location", label: "Location" },
   { href: EVENTBRITE_URL, label: "Events", external: true },
   { href: "/mission", label: "Our mission" },
 ];
 
 export const footerNavColumnOne: FooterLink[] = [
   { href: "/#workspaces", label: "Memberships" },
+  { href: "/#location", label: "Location" },
   { href: EVENTBRITE_URL, label: "Events", external: true },
   { href: "/mission", label: "Our mission" },
 ];

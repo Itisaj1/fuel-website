@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
 import Workspaces from "@/components/Workspaces";
+import Location from "@/components/Location";
 import Events from "@/components/Events";
 import Mission from "@/components/Mission";
 import Contact from "@/components/Contact";
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <Intro />
       <Workspaces />
+      <Location />
       <Events />
       <Mission />
       <Contact />
