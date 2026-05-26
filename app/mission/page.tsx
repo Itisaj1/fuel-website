@@ -4,24 +4,24 @@ import Link from "next/link";
 
 const pillars = [
   {
-    title: "Collaborate",
+    title: "Lorem ipsum",
     description:
-      "Work side by side with founders, creatives, and business leaders. Collaboration is the spark that drives everything forward.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    title: "Innovate",
+    title: "Dolor sit amet",
     description:
-      "Turn bold ideas into reality with resources, mentorship, and a community that thrives on experimentation — action over inspiration.",
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    title: "Grow",
+    title: "Consectetur elit",
     description:
-      "Scale your business and yourself. FUEL gives you the runway, capital connections, and confidence to level up.",
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
-    title: "commUNITY",
+    title: "Adipiscing tempor",
     description:
-      "Belonging isn't an amenity — it's core to who we are. UNITY is built into everything we do.",
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
 ];
 
@@ -32,26 +32,26 @@ export default function MissionPage() {
       <section className="px-6 pb-16 pt-24 lg:px-10 lg:pb-24 lg:pt-28 xl:px-12">
         <div className="mx-auto max-w-site">
           <p className="font-display text-sm font-medium uppercase tracking-wide text-primary">
-            About FUEL
+            Lorem ipsum dolor
           </p>
           <h1 className="font-display mt-3 max-w-3xl text-4xl font-bold text-dark md:text-5xl lg:text-6xl">
             Our mission
           </h1>
           <p className="font-display mt-6 max-w-2xl text-xl font-bold text-dark md:text-2xl">
-            Big ideas don&apos;t happen in isolation.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
           <div className="mt-8 max-w-2xl space-y-5">
             <p className="font-body text-[15px] leading-relaxed text-dark md:text-base">
-              FUEL exists to create a community-first coworking space in Spokane
-              where entrepreneurs, freelancers, and forward-thinkers can do their
-              best work — together. We believe stronger local connections lead to
-              bolder ideas, healthier neighbourhoods, and greater opportunity for
-              everyone.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.
             </p>
             <p className="font-body text-[15px] leading-relaxed text-dark md:text-base">
-              Everything we build — from flexible memberships to meeting rooms and
-              events — is designed to help people collaborate, innovate, and grow
-              in a place that feels like home.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
             </p>
           </div>
 
