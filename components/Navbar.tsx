@@ -43,10 +43,10 @@ export default function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-white">
-      <nav className="mx-auto flex h-14 max-w-[90rem] items-center justify-between px-6 lg:px-10 xl:px-12">
+      <nav className="mx-auto flex h-12 max-w-[90rem] items-center justify-between px-6 lg:px-10 xl:px-12">
         <Link
           href="/"
-          className="font-display text-xl font-bold uppercase leading-none tracking-tight text-dark"
+          className="font-display text-lg font-bold uppercase leading-none tracking-tight text-dark"
         >
           FUEL
         </Link>
@@ -74,7 +74,7 @@ export default function Navbar() {
             </a>
             <Link
               href="/#contact"
-              className="font-body rounded-full bg-dark px-4 py-2 text-[15px] font-bold text-white transition-opacity hover:opacity-85"
+              className="font-body rounded-full bg-dark px-3.5 py-1.5 text-sm font-bold text-white transition-opacity hover:opacity-85"
             >
               Try a free day
             </Link>
@@ -84,13 +84,13 @@ export default function Navbar() {
         <div className="flex items-center gap-3 xl:hidden">
           <Link
             href="/#contact"
-            className="font-body hidden rounded-full bg-dark px-4 py-2 text-sm font-bold text-white sm:inline-block"
+            className="font-body hidden rounded-full bg-dark px-3.5 py-1.5 text-sm font-bold text-white sm:inline-block"
           >
             Try a free day
           </Link>
           <button
             type="button"
-            className="flex h-10 w-10 items-center justify-center text-dark"
+            className="flex h-9 w-9 items-center justify-center text-dark"
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
             onClick={() => setOpen((prev) => !prev)}

@@ -80,7 +80,7 @@ export default function Location() {
             </a>
           </div>
 
-          <div className="flex w-full flex-col lg:sticky lg:top-20">
+          <div className="flex w-full flex-col lg:sticky lg:top-16">
             <div className="relative min-h-[400px] overflow-hidden border border-cream/15 sm:min-h-[480px] lg:min-h-[560px] xl:min-h-[640px]">
               <iframe
                 title="Street View of FUEL Coworking at 809 W Main Ave, Spokane"
